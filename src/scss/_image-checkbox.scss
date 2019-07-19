@@ -1,0 +1,36 @@
+.custom-control.image-checkbox{
+    position: relative;
+    padding-left: 0;
+
+    .custom-control-input:checked ~ .custom-control-label{
+        &:after,
+        &:before{
+            opacity: 1;
+        }
+    }
+
+    label{
+        cursor: pointer;
+        
+        &:before{
+            border-color: #007bff;
+            background-color: #007bff;
+        }
+
+        &:after,
+        &:before{
+            transition: opacity .3s ease;
+            opacity: 0;
+            left: .25rem;
+        }
+
+        &:focus,
+        &:hover{
+            opacity: .8;
+        }
+
+        img{
+            border-radius: 2.5px;
+        }
+    }
+}

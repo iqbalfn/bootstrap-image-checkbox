@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "bootstrap-image-checkbox.css",
+	"sources": [
+		"../../src/scss/bootstrap.scss",
+		"../../src/scss/_variables.scss",
+		"../../src/scss/_image-checkbox.scss"
+	],
+	"sourcesContent": [
+		"/*!\n * Bootstrap Image Checkbox v0.0.1 (https://iqbalfn.github.io/bootstrap-image-checkbox/)\n * Copyright 2019 Iqbal Fauzi\n * Licensed under MIT (https://github.com/iqbalfnn/bootstrap-image-checkbox/blob/master/LICENSE)\n */\n\n@import \"variables\";\n@import \"image-checkbox\";",
+		"",
+		".custom-control.image-checkbox{\n    position: relative;\n    padding-left: 0;\n\n    .custom-control-input:checked ~ .custom-control-label{\n        &:after,\n        &:before{\n            opacity: 1;\n        }\n    }\n\n    label{\n        cursor: pointer;\n        \n        &:before{\n            border-color: #007bff;\n            background-color: #007bff;\n        }\n\n        &:after,\n        &:before{\n            transition: opacity .3s ease;\n            opacity: 0;\n            left: .25rem;\n        }\n\n        &:focus,\n        &:hover{\n            opacity: .8;\n        }\n\n        img{\n            border-radius: 2.5px;\n        }\n    }\n}"
+	],
+	"names": [],
+	"mappings": "AAAA;;;;GAIG;AEJH,AAAA,eAAe,AAAA,eAAe,CAAA;EAC1B,QAAQ,EAAE,QAAQ;EAClB,YAAY,EAAE,CAAC;CAiClB;;AAnCD,AAKQ,eALO,AAAA,eAAe,CAI1B,qBAAqB,AAAA,QAAQ,GAAG,qBAAqB,AAChD,MAAM,EALf,eAAe,AAAA,eAAe,CAI1B,qBAAqB,AAAA,QAAQ,GAAG,qBAAqB,AAEhD,OAAO,CAAA;EACJ,OAAO,EAAE,CAAC;CACb;;AART,AAWI,eAXW,AAAA,eAAe,CAW1B,KAAK,CAAA;EACD,MAAM,EAAE,OAAO;CAsBlB;;AAlCL,AAcQ,eAdO,AAAA,eAAe,CAW1B,KAAK,AAGA,OAAO,CAAA;EACJ,YAAY,EAAE,OAAO;EACrB,gBAAgB,EAAE,OAAO;CAC5B;;AAjBT,AAmBQ,eAnBO,AAAA,eAAe,CAW1B,KAAK,AAQA,MAAM,EAnBf,eAAe,AAAA,eAAe,CAW1B,KAAK,AASA,OAAO,CAAA;EACJ,UAAU,EAAE,gBAAgB;EAC5B,OAAO,EAAE,CAAC;EACV,IAAI,EAAE,MAAM;CACf;;AAxBT,AA0BQ,eA1BO,AAAA,eAAe,CAW1B,KAAK,AAeA,MAAM,EA1Bf,eAAe,AAAA,eAAe,CAW1B,KAAK,AAgBA,MAAM,CAAA;EACH,OAAO,EAAE,EAAE;CACd;;AA7BT,AA+BQ,eA/BO,AAAA,eAAe,CAW1B,KAAK,CAoBD,GAAG,CAAA;EACC,aAAa,EAAE,KAAK;CACvB"
+}
