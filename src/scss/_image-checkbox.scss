@@ -34,3 +34,12 @@
         }
     }
 }
+
+.form-group-image-checkbox.is-invalid{
+    label{
+        color: $form-feedback-invalid-color;
+    }
+    .invalid-feedback{
+        display: block;
+    }
+}
